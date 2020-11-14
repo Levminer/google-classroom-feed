@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Google Classroom Feed</title>
+		<meta charset="UTF-8" />
+		<!-- css -->
+		<link rel="stylesheet" href="https://cdn.levminer.com/css/dragonfly/dragonfly@1.1.0.css" />
+		<link rel="stylesheet" href="./assets/index.css" />
+		<!-- js -->
+		<script defer src="./assets/index.js"></script>
+	</head>
+	<body onload="api()">
+		<div class="center">
+			<div class="container">
+				<div class="container0">
+					<h1>Betöltés...</h1>
+					<img src="./assets/loading.gif" alt="" srcset="" />
+					<h3>Google Classroom Feed 0.1.0</h3>
+				</div>
+				<div class="container1">
+					<h2>Szűrés</h2>
+					<input type="checkbox" name="checkbox1" id="cb0" class="checkbox1" checked /> Bejelentések
+					<input type="checkbox" name="checkbox1" id="cb1" class="checkbox1" checked /> Feladatok
+					<input type="checkbox" name="checkbox1" id="cb2" class="checkbox1" checked /> Tananyagok
+
+					<h2>Frissítés</h2>
+					<button class="button2" onclick="location.reload()">Frissítés</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
