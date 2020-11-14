@@ -1,0 +1,58 @@
+body {
+	background-color: black;
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+	/* load animation */
+	animation: fadeInAnimation ease-in 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.center {
+	top: 80px;
+	width: 530px;
+	height: 350px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+
+	background-color: black;
+	margin-top: 50px;
+	border-radius: 30px;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 1400px;
+	height: auto;
+}
+
+.grid:last-child {
+	margin-bottom: 50px;
+}
+
+.div1 {
+	grid-area: 1 / 1 / 2 / 4;
+}
+
+.container1 {
+	display: none;
+}
+
+.text1 {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}

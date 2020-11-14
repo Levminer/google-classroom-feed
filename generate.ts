@@ -2,7 +2,7 @@ const fs = require("fs")
 const readline = require("readline")
 const { google } = require("googleapis")
 
-const SCOPES = ["https://www.googleapis.com/auth/classroom.courses", "https://www.googleapis.com/auth/classroom.announcements", "https://www.googleapis.com/auth/classroom.coursework.me", "https://www.googleapis.com/auth/classroom.courseworkmaterials", "https://www.googleapis.com/auth/classroom.coursework.me"]
+const SCOPES = ["https://www.googleapis.com/auth/classroom.courses", "https://www.googleapis.com/auth/classroom.courseworkmaterials", "https://www.googleapis.com/auth/classroom.coursework.me"]
 
 const TOKEN_PATH = "token.json"
 

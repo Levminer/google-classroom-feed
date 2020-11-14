@@ -1,0 +1,55 @@
+.button1 {
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(255, 255, 255);
+}
+
+.button1:hover {
+	color: white;
+	background-color: black;
+	border-color: white;
+}
+
+.button2 {
+	color: rgb(255, 255, 255);
+	background-color: var(--df_gray);
+	border-color: rgb(255, 255, 255);
+	margin-bottom: 30px;
+}
+
+.button2:hover {
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(0, 0, 0);
+}
+
+.checkbox1 {
+	background-color: var(--df_gray) !important;
+	color: white !important;
+	border: 1px white solid !important;
+}
+
+.navbar-logo {
+	color: white;
+}
+
+.navbar-logo:hover {
+	text-decoration: underline;
+}
+
+.navbar-button {
+	background-color: white;
+	border-color: white;
+	color: black;
+}
+
+.navbar-button:hover {
+	background-color: black;
+	border-color: white;
+	color: white;
+}
+
+.navbar-link li a:hover {
+	color: var(--df_white);
+	text-decoration: underline;
+}

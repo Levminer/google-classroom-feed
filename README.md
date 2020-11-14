@@ -1,6 +1,6 @@
 # Google Classroom Feed
 
--   A simple Node.js and Express app that collects everything from you Google Classroom courses
+-   A simple Node.js and Express app that collects everything from your Google Classroom courses
 
 ### Commands
 

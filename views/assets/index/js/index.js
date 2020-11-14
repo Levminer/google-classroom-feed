@@ -1,5 +1,5 @@
 let api = () => {
-	fetch("/api/v1/data")
+	fetch("/api/v2/data")
 		.then((res) => res.json())
 		.then((data) => {
 			let go = () => {
@@ -23,6 +23,9 @@ let api = () => {
 
 						<div class="div1"> 
 						<h3>${data.course_announcements_text[i]}</h3>
+
+
+						<a target="_blank" href="${data.course_announcements_link[i]}" class="button1"  >Link</a>
 						</div>
 
 						<br />
@@ -58,6 +61,8 @@ let api = () => {
 						<div class="div1"> 
 						<h2>${data.course_coursework_title[i]}</h3>
 						<h3>${data.course_coursework_text[i]}</h3>
+
+						<a target="_blank" href="${data.course_coursework_link[i]}" class="button1"  >Link</a>
 						</div>
 
 						<br />
@@ -106,6 +111,38 @@ let api = () => {
 				document.querySelector(".center").style.width = "1500px"
 				document.querySelector(".container0").style.display = "none"
 				document.querySelector(".container1").style.display = "block"
+
+				//? cookies
+				let cookies = document.cookie
+					.split(";")
+					.map((cookie) => cookie.split("="))
+					.reduce((accumulator, [key, value]) => ({ ...accumulator, [key.trim()]: decodeURIComponent(value) }), {})
+
+				console.log(cookies)
+
+				if (cookies.style0 == "true") {
+					document.getElementById("cb0").checked = false
+
+					c0 = false
+
+					style0()
+				}
+
+				if (cookies.style1 == "true") {
+					document.getElementById("cb1").checked = false
+
+					c1 = false
+
+					style1()
+				}
+
+				if (cookies.style2 == "true") {
+					document.getElementById("cb2").checked = false
+
+					c2 = false
+
+					style2()
+				}
 			}
 
 			console.log(data)
@@ -142,6 +179,8 @@ let style0 = () => {
 		}
 
 		c0 = false
+
+		document.cookie = "style0=false"
 	} else {
 		let e = document.querySelectorAll("#announcements")
 
@@ -150,6 +189,8 @@ let style0 = () => {
 		}
 
 		c0 = true
+
+		document.cookie = "style0=true"
 	}
 }
 
@@ -162,6 +203,8 @@ let style1 = () => {
 		}
 
 		c1 = false
+
+		document.cookie = "style1=false"
 	} else {
 		let e = document.querySelectorAll("#coursework")
 
@@ -170,6 +213,8 @@ let style1 = () => {
 		}
 
 		c1 = true
+
+		document.cookie = "style1=true"
 	}
 }
 
@@ -182,6 +227,8 @@ let style2 = () => {
 		}
 
 		c2 = false
+
+		document.cookie = "style2=false"
 	} else {
 		let e = document.querySelectorAll("#courseworkmaterial")
 
@@ -190,5 +237,7 @@ let style2 = () => {
 		}
 
 		c2 = true
+
+		document.cookie = "style2=true"
 	}
 }

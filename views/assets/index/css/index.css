@@ -21,7 +21,7 @@ body {
 .center {
 	top: 80px;
 	width: 530px;
-	height: 300px;
+	height: 350px;
 }
 
 .grid {
@@ -50,35 +50,4 @@ body {
 
 .container1 {
 	display: none;
-}
-
-.button1 {
-	color: rgb(0, 0, 0);
-	background-color: rgb(255, 255, 255);
-	border-color: rgb(255, 255, 255);
-}
-
-.button1:hover {
-	color: white;
-	background-color: black;
-	border-color: white;
-}
-
-.button2 {
-	color: rgb(255, 255, 255);
-	background-color: var(--df_gray);
-	border-color: rgb(255, 255, 255);
-	margin-bottom: 30px;
-}
-
-.button2:hover {
-	color: rgb(0, 0, 0);
-	background-color: rgb(255, 255, 255);
-	border-color: rgb(0, 0, 0);
-}
-
-.checkbox1 {
-	background-color: var(--df_gray) !important;
-	color: white !important;
-	border: 1px white solid !important;
 }

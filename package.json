@@ -1,7 +1,7 @@
 {
   "name": "google-classroom-feed",
-  "version": "0.1.0",
-  "description": "A simple Node.js and Express app that collects everything from you Google Classroom courses",
+  "version": "1.0.0",
+  "description": "A simple Node.js and Express app that collects everything from your Google Classroom courses",
   "main": "server.js",
   "scripts": {
     "start": "pm2 start server.js",
